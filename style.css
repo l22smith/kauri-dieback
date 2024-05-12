@@ -1,0 +1,268 @@
+@font-face {
+    font-family: BebasNeue;
+    src: url(Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+  }
+
+@font-face {
+    font-family: Lato;
+    src: url(Fonts/Lato/Lato-Black.ttf);
+}
+body {
+    margin: 0px;
+    background-color: aliceblue;
+}
+
+
+header{
+    background-image: url("images/fern-foliage-plant-nature-thumbnail.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+}
+
+h1 {
+    display: inline-block;
+    text-align:center;
+    margin: 30px;
+    font-size: 220px;
+    font-family: BebasNeue;
+    color: rgb(255, 255, 255);
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: hsl(125, 38%, 40%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar a{
+    color:rgb(255, 255, 255);
+    font-family: Lato;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color:hsl(140, 82%, 24%);
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar {
+    position: sticky; 
+    top: 0; 
+    z-index: 1000;
+}
+
+
+p {
+    font-size: 25px;
+    text-align: center;
+    font-family: Lato;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.button-container a {
+    display: inline-block;
+    background-color: hsl(125, 38%, 40%);
+    color:rgb(255, 255, 255);
+    font-family: Verdana;
+    font-size: 25px;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.button-container a:hover {
+    background-color: hsl(140, 82%, 24%);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-text {
+    width: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px; /* Increase padding for better readability */
+    border-radius: 10px;
+    font-size: 30px; /* Increase font size */
+    font-family: Lato;
+}
+
+
+.image-container:hover .image-text {
+    opacity: 1;
+}
+
+.gallery-item {
+    margin: 50px;
+}
+
+.gallery-item img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.2);
+}
+
+/* Add this CSS to your existing style.css file */
+
+.donation-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-family: Lato;
+}
+
+.donation-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Lato;
+}
+
+.donation-form p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: Lato;
+}
+
+.donation-form form {
+    text-align: center;
+}
+
+.donation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.donation-form input[type="text"],
+.donation-form input[type="email"],
+.donation-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.donation-form input[type="submit"] {
+    background-color: hsl(125, 38%, 40%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.donation-form input[type="submit"]:hover {
+    background-color: hsl(140, 82%, 24%);
+}
+
+/* Add this CSS to your existing style.css file */
+
+h2 {
+    font-size: 28px;
+    font-family: Lato;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add this CSS to your existing style.css file */
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content img {
+    max-width: 50%;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.content div {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-family: Lato;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

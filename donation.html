@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Save the Kauri Trees</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Kauri Dieback</a></li>
+            <li><a href="howyoucanhelp.html">How you can help</a></li>
+            <li><a href="donation.html">Donate</a></li>
+            <li><a href="resources.html">Awareness Resources</a></li> 
+        </ul>
+    </nav>
+
+    <!-- Banner at the top of all pages within the site have the same look -->
+    <header>
+        <h1>Donate to Save the Kauri Trees</h1>
+    </header>
+
+    <br>
+
+    <!-- Donation form -->
+    <div class="donation-form">
+        <h2>Make a Donation</h2>
+        <p>Your contribution will help fund efforts to prevent the spread of Kauri Dieback and preserve New Zealand's native trees.</p>
+        <form action="process_donation.php" method="post">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" placeholder="Enter donation amount">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email">
+            <input type="submit" value="Donate">
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Save the Kauri Trees</p>
+    </footer>
+</body>
+
+</html>
